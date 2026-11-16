@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Productos de Café Norte: bebidas de café, panadería y comida casera.">
+  <title>Productos | Café Norte</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__barra">
+      <a class="marca" href="index.html">
+        <img src="img/logo.svg" alt="" width="48" height="48">
+        <span>Café Norte</span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html" aria-current="page">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="seccion" aria-labelledby="titulo-productos">
+      <div class="contenedor">
+        <h1 id="titulo-productos">Nuestros productos</h1>
+        <p class="introduccion">Todo se prepara al momento. Los precios incluyen IVA.</p>
+
+        <div class="productos">
+          <article class="producto">
+            <img src="img/cafe.svg" width="120" height="120" alt="Ilustración de una taza de café">
+            <h2>Bebidas de café</h2>
+            <ul class="lista-precios">
+              <li><span>Americano</span> <span>$30</span></li>
+              <li><span>Capuchino</span> <span>$42</span></li>
+              <li><span>Latte de vainilla</span> <span>$48</span></li>
+              <li><span>Frappé de moka</span> <span>$55</span></li>
+            </ul>
+          </article>
+
+          <article class="producto">
+            <img src="img/pan.svg" width="120" height="120" alt="Ilustración de una concha de pan dulce">
+            <h2>Panadería</h2>
+            <ul class="lista-precios">
+              <li><span>Concha</span> <span>$15</span></li>
+              <li><span>Cuernito de mantequilla</span> <span>$22</span></li>
+              <li><span>Galleta de avena</span> <span>$18</span></li>
+              <li><span>Rebanada de pastel</span> <span>$40</span></li>
+            </ul>
+          </article>
+
+          <article class="producto">
+            <img src="img/comida.svg" width="120" height="120" alt="Ilustración de un plato con verduras">
+            <h2>Comida casera</h2>
+            <ul class="lista-precios">
+              <li><span>Sándwich de pavo</span> <span>$50</span></li>
+              <li><span>Chilaquiles verdes</span> <span>$60</span></li>
+              <li><span>Ensalada del día</span> <span>$55</span></li>
+              <li><span>Combo estudiante</span> <span>$45</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--clara" aria-labelledby="titulo-servicios">
+      <div class="contenedor">
+        <h2 id="titulo-servicios">Servicios</h2>
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <h3>Pedidos para llevar</h3>
+            <p>Haz tu pedido desde la página de contacto y recógelo en 15 minutos.</p>
+          </article>
+          <article class="tarjeta">
+            <h3>Eventos universitarios</h3>
+            <p>Preparamos coffee break para congresos, juntas y presentaciones de proyectos.</p>
+          </article>
+          <article class="tarjeta">
+            <h3>Espacio de estudio</h3>
+            <p>Mesas con enchufes y wifi gratuito para trabajar en equipo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__grid">
+      <p>&copy; 2026 Café Norte. Proyecto académico del Laboratorio de Programación Web.</p>
+      <address>Av. Universidad s/n, San Nicolás de los Garza, N.L. · <a href="tel:+528112345678">81 1234 5678</a></address>
+    </div>
+  </footer>
+</body>
+</html>

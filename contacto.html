@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contacto de Café Norte: ubicación, teléfono y formulario para pedidos.">
+  <title>Contacto | Café Norte</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__barra">
+      <a class="marca" href="index.html">
+        <img src="img/logo.svg" alt="" width="48" height="48">
+        <span>Café Norte</span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Productos</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="seccion" aria-labelledby="titulo-contacto">
+      <div class="contenedor contacto">
+        <div class="contacto__datos">
+          <h1 id="titulo-contacto">Contacto</h1>
+          <p>Escríbenos para hacer un pedido, cotizar un evento o enviarnos tus comentarios.</p>
+          <h2>Visítanos</h2>
+          <address>
+            Av. Universidad s/n<br>
+            Ciudad Universitaria<br>
+            San Nicolás de los Garza, N.L.<br>
+            Teléfono: <a href="tel:+528112345678">81 1234 5678</a><br>
+            Correo: <a href="mailto:hola@cafenorte.example">hola@cafenorte.example</a>
+          </address>
+        </div>
+
+        <form class="formulario" action="#" method="post">
+          <h2>Envíanos un mensaje</h2>
+
+          <div class="campo">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+          </div>
+
+          <div class="campo">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" autocomplete="email"
+                   aria-describedby="ayuda-correo" required>
+            <small id="ayuda-correo">Te responderemos a este correo.</small>
+          </div>
+
+          <div class="campo">
+            <label for="motivo">Motivo</label>
+            <select id="motivo" name="motivo">
+              <option value="pedido">Pedido para llevar</option>
+              <option value="evento">Cotización de evento</option>
+              <option value="comentario">Comentario o sugerencia</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          </div>
+
+          <button class="boton" type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__grid">
+      <p>&copy; 2026 Café Norte. Proyecto académico del Laboratorio de Programación Web.</p>
+      <address>Av. Universidad s/n, San Nicolás de los Garza, N.L. · <a href="tel:+528112345678">81 1234 5678</a></address>
+    </div>
+  </footer>
+</body>
+</html>

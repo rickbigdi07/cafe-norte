@@ -1,0 +1,373 @@
+/* =========================================================
+   Café Norte - Hoja de estilo principal
+   Diseño "mobile first": primero los estilos para teléfono,
+   después el breakpoint de 768px para tableta y computadora.
+   ========================================================= */
+
+/* ---------- Variables de color y medidas ---------- */
+:root {
+  --cafe-oscuro: #2b1a10;   /* texto principal */
+  --cafe: #7a3e14;          /* color de marca, enlaces y botones */
+  --cafe-hover: #5a2d0e;
+  --crema: #fffaf3;         /* fondo general */
+  --arena: #f3e3cc;         /* fondo de secciones alternas */
+  --gris-texto: #5c4636;    /* textos secundarios */
+  --borde: #d9c3a5;
+  --radio: 12px;
+  --ancho-max: 1100px;
+}
+
+/* ---------- Reinicio básico ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--cafe-oscuro);
+  background-color: var(--crema);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  margin: 0 0 0.75rem;
+}
+
+h1 { font-size: 1.9rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.2rem; }
+
+a {
+  color: var(--cafe);
+}
+
+/* Foco visible para quien navega con teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #1d5fbf;
+  outline-offset: 2px;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: var(--ancho-max);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Enlace para saltar al contenido: oculto hasta recibir el foco */
+.saltar {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--cafe-oscuro);
+  color: #ffffff;
+  z-index: 10;
+}
+
+.saltar:focus {
+  top: 1rem;
+}
+
+/* ---------- Encabezado y navegación (Flexbox) ---------- */
+.encabezado {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--borde);
+}
+
+.encabezado__barra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--cafe-oscuro);
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 0.5rem 0.9rem;
+  border-radius: var(--radio);
+  color: var(--cafe-oscuro);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: var(--arena);
+}
+
+/* Página actual resaltada */
+.menu a[aria-current="page"] {
+  background-color: var(--cafe);
+  color: #ffffff;
+}
+
+/* ---------- Botón ---------- */
+.boton {
+  display: inline-block;
+  padding: 0.75rem 1.4rem;
+  border: none;
+  border-radius: var(--radio);
+  background-color: var(--cafe);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: var(--cafe-hover);
+}
+
+/* ---------- Portada (Grid) ---------- */
+.portada {
+  padding: 2rem 0;
+}
+
+.portada__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.portada__imagen {
+  border-radius: var(--radio);
+  margin: 0 auto;
+}
+
+/* ---------- Secciones ---------- */
+.seccion {
+  padding: 2rem 0;
+}
+
+.seccion--clara {
+  background-color: var(--arena);
+}
+
+.introduccion {
+  color: var(--gris-texto);
+  margin-top: 0;
+}
+
+/* ---------- Tarjetas (Grid) ---------- */
+.tarjetas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.tarjeta {
+  background-color: #ffffff;
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  padding: 1.25rem;
+}
+
+.tarjeta p {
+  margin: 0;
+}
+
+/* ---------- Productos (Grid + Flexbox) ---------- */
+.productos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.producto img {
+  margin-bottom: 0.75rem;
+}
+
+.lista-precios {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.lista-precios li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  border-bottom: 1px dashed var(--borde);
+}
+
+/* ---------- Tabla de horario ---------- */
+.tabla {
+  width: 100%;
+  max-width: 480px;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+.tabla caption {
+  text-align: left;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+.tabla th,
+.tabla td {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--borde);
+  text-align: left;
+}
+
+.tabla thead th {
+  background-color: var(--cafe);
+  color: #ffffff;
+}
+
+/* ---------- Contacto y formulario ---------- */
+.contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+address {
+  font-style: normal;
+}
+
+.formulario {
+  background-color: #ffffff;
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  padding: 1.25rem;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.campo label {
+  font-weight: 600;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  font: inherit;
+  padding: 0.6rem;
+  border: 1px solid #8c7560;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: var(--cafe-oscuro);
+}
+
+.campo small {
+  color: var(--gris-texto);
+}
+
+/* ---------- Pie de página ---------- */
+.pie {
+  background-color: var(--cafe-oscuro);
+  color: #f6ece0;
+  padding: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+.pie a {
+  color: #f3c98b;
+}
+
+.pie__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.pie p {
+  margin: 0;
+}
+
+/* =========================================================
+   Breakpoint: tableta y computadora (768px o más)
+   ========================================================= */
+@media (min-width: 768px) {
+  h1 { font-size: 2.4rem; }
+
+  .encabezado__barra {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .portada {
+    padding: 3.5rem 0;
+  }
+
+  .portada__grid {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .tarjetas,
+  .productos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contacto {
+    grid-template-columns: 1fr 1.3fr;
+  }
+
+  .pie__grid {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}

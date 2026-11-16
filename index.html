@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Café Norte: cafetería universitaria con café de especialidad, pan del día y comida casera.">
+  <title>Inicio | Café Norte</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__barra">
+      <a class="marca" href="index.html">
+        <img src="img/logo.svg" alt="" width="48" height="48">
+        <span>Café Norte</span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="menu">
+          <li><a href="index.html" aria-current="page">Inicio</a></li>
+          <li><a href="servicios.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="portada" aria-labelledby="titulo-portada">
+      <div class="contenedor portada__grid">
+        <div class="portada__texto">
+          <h1 id="titulo-portada">Café recién hecho a un paso de tu salón</h1>
+          <p>Somos una cafetería pequeña pensada para estudiantes y profesores. Preparamos café de especialidad, pan del día y comida casera a precios accesibles.</p>
+          <a class="boton" href="servicios.html">Ver productos</a>
+        </div>
+        <img class="portada__imagen" src="img/hero.svg" width="400" height="300"
+             alt="Ilustración de una taza de café humeante junto a un pan dulce sobre la barra">
+      </div>
+    </section>
+
+    <section class="seccion" aria-labelledby="titulo-ventajas">
+      <div class="contenedor">
+        <h2 id="titulo-ventajas">¿Por qué elegirnos?</h2>
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <h3>Precios de estudiante</h3>
+            <p>Combos desde $45 y descuento del 10% mostrando tu credencial universitaria.</p>
+          </article>
+          <article class="tarjeta">
+            <h3>Pedidos para llevar</h3>
+            <p>Encarga por teléfono o en el formulario y recoge sin hacer fila entre clases.</p>
+          </article>
+          <article class="tarjeta">
+            <h3>Ingredientes locales</h3>
+            <p>Compramos el café y el pan a productores de la región cada semana.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--clara" aria-labelledby="titulo-horario">
+      <div class="contenedor">
+        <h2 id="titulo-horario">Horario</h2>
+        <table class="tabla">
+          <caption>Horario de atención</caption>
+          <thead>
+            <tr>
+              <th scope="col">Días</th>
+              <th scope="col">Horas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Lunes a viernes</th>
+              <td>7:00 a 20:00</td>
+            </tr>
+            <tr>
+              <th scope="row">Sábado</th>
+              <td>8:00 a 14:00</td>
+            </tr>
+            <tr>
+              <th scope="row">Domingo</th>
+              <td>Cerrado</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__grid">
+      <p>&copy; 2026 Café Norte. Proyecto académico del Laboratorio de Programación Web.</p>
+      <address>Av. Universidad s/n, San Nicolás de los Garza, N.L. · <a href="tel:+528112345678">81 1234 5678</a></address>
+    </div>
+  </footer>
+</body>
+</html>
