@@ -9,7 +9,7 @@ Actividad 2: Desarrollo de un sitio web responsivo, semántico y accesible
 - Josue Emiliano Diaz Garcia – 2226766 – ITS
 
 **Sitio publicado:** https://rickbigdi07.github.io/cafe-norte/
-**Repositorio:** https://github.com/USUARIO/cafe-norte
+**Repositorio:** https://github.com/rickbigdi07/cafe-norte
 
 > Reemplazar `USUARIO` por el nombre de usuario de GitHub después de publicar.
 
