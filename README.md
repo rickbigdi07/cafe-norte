@@ -1,6 +1,6 @@
 # Café Norte – Sitio web responsivo, semántico y accesible
 
-Laboratorio de Programación Web · FIME, UANL
+Laboratorio de Programación Web 
 Actividad 2: Desarrollo de un sitio web responsivo, semántico y accesible
 
 **Equipo**
