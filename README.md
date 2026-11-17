@@ -131,7 +131,3 @@ Validado con los servicios del W3C usando la URL publicada en GitHub Pages.
 ![Validación HTML de contacto.html](capturas/validacion-contacto.png)
 ![Validación CSS](capturas/validacion-css.png)
 
-## Cómo ver el sitio en local
-
-1. Descargar o clonar el repositorio.
-2. Abrir `index.html` en el navegador.
